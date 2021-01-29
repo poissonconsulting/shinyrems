@@ -41,8 +41,7 @@ check_data_upload <- function(data){
 
   if(!all(names %in% names(data))){
     chk::err("Uploaded data must have column names: ",
-             err::cc(names, conjunction = "and",
-                     ellipsis = 1000))
+             cc(names, conj = " and ", ellipsis = 1000))
   }
 
   check_values(data$Year, c(1900L, 2100L), x_name = "Column 'Year'")

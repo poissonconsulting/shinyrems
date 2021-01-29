@@ -28,7 +28,6 @@ Imports:
     dplyr,
     DT,
     dttr2,
-    err,
     ggplot2,
     glue,
     htmltools,

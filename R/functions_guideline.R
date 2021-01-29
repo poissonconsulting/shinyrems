@@ -54,7 +54,7 @@ ems_data_parameter <- function(data, all_data, dataset, lookup,
   }
 
   if(!nrow(data)){
-    err(paste0("There is no available data for the additional parameter(s): ", err::cc_and(params), " at the selected sites and date range. This is required to calculate the limits. Try setting guideline manually, or visit the Water Quality Guideline app (https://bcgov-env.shinyapps.io/bc_wqg/), where you can set the value for additional parameters manually."))
+    err(paste0("There is no available data for the additional parameter(s): ", cc(params, " and "), " at the selected sites and date range. This is required to calculate the limits. Try setting guideline manually, or visit the Water Quality Guideline app (https://bcgov-env.shinyapps.io/bc_wqg/), where you can set the value for additional parameters manually."))
   }
   data <- ems_tidy(data,
                    mdl_action = mdl_action,
