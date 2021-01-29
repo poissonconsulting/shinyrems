@@ -49,9 +49,9 @@ check_data_upload <- function(data){
   check_values(data$Month, c(1L, 12L), x_name = "Column 'Month'")
   check_values(data$Day, c(1L, 31L), x_name = "Column 'Day'")
 
-  chk_no_missing(data$Station, x_name = "Column 'Station'")
-  chk_no_missing(data$Value, x_name = "Column 'Station'")
-  chk_no_missing(data$Variable, x_name = "Column 'Station'")
+  chk_not_any_na(data$Station, x_name = "Column 'Station'")
+  chk_not_any_na(data$Value, x_name = "Column 'Station'")
+  chk_not_any_na(data$Variable, x_name = "Column 'Station'")
 
   if("Second" %in% names(data)){
     check_values(data$Second, c(0L, 59L, NA), x_name = "Column 'Second'")
