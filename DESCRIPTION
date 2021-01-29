@@ -1,53 +1,64 @@
 Package: shinyrems
 Title: Shiny Interface to 'rems' and 'wqbc'
 Version: 0.0.1
-Authors@R: c(
-    person("Sebastian", "Dalgarno", , "seb@poissonconsulting.ca", c("aut", "cre"), comment = c(ORCID = "0000-0002-3658-4517")),
-    person("Joe", "Thorley", , "joe@poissonconsulting.ca", "ctb", comment = c(ORCID = "0000-0002-7683-4592")),
-    person("Province of British Columbia", role = c("cph", "fnd"))
-    )
-Description: A Shiny interface to visualize, analyze and download data from 
-    BC Data Catalogue 'ems' database using the 'rems' and 'wqbc' R packages.
+Authors@R: 
+    c(person(given = "Sebastian",
+             family = "Dalgarno",
+             role = c("aut", "cre"),
+             email = "seb@poissonconsulting.ca",
+             comment = c(ORCID = "0000-0002-3658-4517")),
+      person(given = "Joe",
+             family = "Thorley",
+             role = "ctb",
+             email = "joe@poissonconsulting.ca",
+             comment = c(ORCID = "0000-0002-7683-4592")),
+      person(given = "Province of British Columbia",
+             role = c("cph", "fnd")))
+Description: A Shiny interface to visualize, analyze and
+    download data from BC Data Catalogue 'ems' database using the 'rems'
+    and 'wqbc' R packages.
 License: Apache License (>= 2.0)
+URL: https://github.com/poissonconsulting/shinyrems
+BugReports: 
+    https://github.com/poissonconsulting/shinyrems/issues
 Depends:
-    R (>= 2.10)
+    R (>= 3.4)
 Imports: 
-    shiny,
-    htmltools,
-    rems,
-    dplyr,
-    ggplot2,
-    shinyjs,
-    leaflet,
-    readr,
-    DT,
     chk,
-    glue,
-    magrittr,
-    wqbc,
-    shinyWidgets,
+    dplyr,
+    DT,
     dttr2,
-    waiter,
-    shinycssloaders,
-    rlang,
     err,
-    shinyhelper,
+    ggplot2,
+    glue,
+    htmltools,
+    leaflet,
+    magrittr,
     png,
+    readr,
+    rems,
+    rlang,
     sf,
-    shinyjqui
+    shiny,
+    shinycssloaders,
+    shinyhelper,
+    shinyjqui,
+    shinyjs,
+    shinyWidgets,
+    waiter,
+    wqbc
 Suggests:
-    testthat (>= 2.1.0),
-    usethis,
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat,
+    usethis
 Remotes: 
     bcgov/rems,
     bcgov/wqbc
-URL: https://github.com/poissonconsulting/shinyrems
-BugReports: https://github.com/poissonconsulting/shinyrems/issues
-RoxygenNote: 7.1.1
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
-LazyData: true
 Language: en-US
+LazyData: true
 Roxygen: list(markdown = TRUE)
-VignetteBuilder: knitr
+RoxygenNote: 7.1.1
