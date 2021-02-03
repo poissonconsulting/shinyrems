@@ -13,7 +13,6 @@
 #' @import leaflet shiny glue
 #' @rawNamespace import(chk, except = p)
 #' @importFrom stats median sd setNames
-#' @importFrom rlang .data
 #' @importFrom utils zip
 #' @importFrom magrittr %<>% %>%
 #' @importFrom shinycssloaders withSpinner
